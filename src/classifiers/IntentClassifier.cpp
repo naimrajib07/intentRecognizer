@@ -3,15 +3,23 @@
 //
 
 #include "../../include/classifiers/IntentClassifier.h"
+#include "../../include/regex/RegexConstants.h"
 
 std::string IntentClassifier::getIntention(std::string inputString) {
-    // todo: implement me
-    return "Get: Calender";
+    // match by substring and regular expression for Intent: Get Weather City
+    // match by substring  for Intent: Get Weather or Intent: Get Fact
+    // match by regular expression for Intent: Check calendar
+    return this->getIntentionByRegex(inputString);
+
 }
 
 
 std::string IntentClassifier::getIntentionByRegex(std::string inputString) {
-    // todo: implement me
+    std::smatch match;
+    regex_search(inputString, match, RegexConstants::timeRegexPattern);
+    if (match.length() > 0) {
+        return "Get: Calender";
+    }
 }
 
 
