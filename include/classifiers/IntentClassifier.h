@@ -10,9 +10,9 @@
 
 class IntentClassifier {
 private:
-    std::string getIntentionByRegex(std::string inputString);
+    bool getIntentionByRegex(std::string inputString, std::regex inputRegex);
 
-    std::string getIntentionBySubString(std::string inputString);
+    std::string getIntentionBySubStringAndRegex(std::string inputString);
 
 public:
     std::string getIntention(std::string inputString);

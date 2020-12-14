@@ -10,6 +10,7 @@
 
 namespace RegexConstants {
     extern const std::regex timeRegexPattern;
+    extern const std::regex cityWeatherRegexPattern;
 }
 
 #endif //INTENTRECOGNIZER_REGEXCONSTANTS_H
