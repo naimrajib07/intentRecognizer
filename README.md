@@ -1,4 +1,4 @@
-##Intent Recognizer
+## Intent Recognizer
 A simple small intent recognition command line tool.
 
 The idea is to be able to ask a set of predefined questions and accurately recognize the intent of the user. The predefined intents are the following:
