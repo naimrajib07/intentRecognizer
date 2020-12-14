@@ -10,4 +10,5 @@ namespace StringConstants{
     extern const std::string weatherCityIntent{"Intent: Get Weather City"};
     extern const std::string weatherIntent{"Intent: Get Weather"};
     extern const std::string factIntent{"Intent: Get Fact"};
+    extern const std::string factNotFound{""};
 }
