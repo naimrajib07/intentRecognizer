@@ -36,7 +36,6 @@ bool IntentClassifier::getIntentionByRegex(std::string inputString, std::regex i
     std::smatch totalMatch;
     bool match = false;
 
-    regex_search(inputString, totalMatch, RegexConstants::timeRegexPattern);
     regex_search(inputString, totalMatch, inputRegex);
 
     if (totalMatch.length() > 0) {

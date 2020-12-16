@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/classifiers//IntentClassifier.h"
+#include "../include/classifiers/IntentClassifier.h"
 
 using namespace std;
 

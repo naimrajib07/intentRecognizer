@@ -6,7 +6,7 @@
 
 #include "../../include/catch2/catch.hpp"
 #include "../../include/classifiers/IntentClassifier.h"
-#include "../../include/constants//StringConstants.h"
+#include "../../include/constants/StringConstants.h"
 
 TEST_CASE("Intention classifier", "[getIntention]") {
     IntentClassifier intentClassifier;
